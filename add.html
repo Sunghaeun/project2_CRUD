@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=3, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>SHOW ME!</h2>
+
+    <p>나를 소개해 봅시다!</p>
+    <form action="save_ok.php" >
+        <fieldset style="width:200px;margin: 5px">
+        <legend>기본 정보 입력</legend>
+        <label for="fname"><span>*</span>이름:</label> <br>
+        <input type="text" id="uname" name="uname"  required> <br>
+        <label for="pwd"><span>*</span>학번:</label> <br>
+        <input type="password" id="pwd" name="pwd" placeholder='2XX00XXX' required> <br><br>
+        <label for="mobile">전화번호:</label> 
+        <input type="text" id="mobile" name="mobile" placeholder="000-0000-0000" pattern="[0-9]{2,3}-[0-9]{3,4}-[0-9]{3,4}" maxlength="13">
+        </fieldset>
+        <br>
+        <label for="gender">성별 </label> 
+        <input type="radio" id="gender" name="gender" value="M" checked>남<input type="radio" id="gender" name="gender" value="W" >여<br>
+        <label for="rc"> RC 선택 </label>
+        <select name="city">
+            <option value="1">카마이클</option>
+            <option value="2" selected>카이퍼</option>
+            <option value="3">토레이</option>
+            <option value="1">열송학사</option>
+            <option value="3">장기려</option>
+        </select><br>
+        <label for="hobby1"> MBTI </label> <br>
+        <input type="checkbox" id="hobby1" name="hobby1" value="1"> 외향적 (E)
+        <input type="checkbox" id="hobby1" name="hobby2" value="2"> 내향적 (I)<br>
+        <input type="checkbox" id="hobby1" name="hobby1" value="1"> 감각적 (S)
+        <input type="checkbox" id="hobby1" name="hobby2" value="2"> 직관적 (N)<br>
+        <input type="checkbox" id="hobby1" name="hobby1" value="1"> 사고형 (T)
+        <input type="checkbox" id="hobby1" name="hobby2" value="2"> 감정형 (F)<br>
+        <input type="checkbox" id="hobby1" name="hobby1" value="1"> 판단형 (J)
+        <input type="checkbox" id="hobby1" name="hobby2" value="2"> 인식형 (P)<br>
+        <br>
+        
+        <br>
+        <label for="bithday"> 생일:  </label>
+        <input type='date' min='2019-01-01' max='2020-12-31' name='fromdate'>
+        <br>
+        <label for="bithday"> 가장 좋아하는 색상:  </label>
+        <input type="color" name="color" value="#ff0000">
+        <br>
+        <label for="introduce"> 한 줄 자기소개  </label>
+        <textarea name='content' cols=40 rows="5"></textarea><br>
+        <input type="submit" value="Submit"> <input type="reset" value="Reset">
+    </form>
+
+
+
+
+</body>
+</html>
